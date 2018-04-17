@@ -7,11 +7,11 @@ import os
 import argparse
 import pygame
 import time
-from model import model, version, ACTIONS, resizeAndDiscolor, WIDTH, HEIGHT
+from train import model, version, ACTIONS, resizeAndDiscolor, WIDTH, HEIGHT
 
 FRAME_PER_ACTION = 1
 EPSILON = 0.001
-version = "test_0"
+
 
 
 def makeVideo(frames, score):
