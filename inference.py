@@ -19,7 +19,7 @@ def makeVideo(frames, score):
     ap.add_argument("-o", "--output", required=False, default='games/{}/{}.mp4'.format(version, score), help="output video file")
     args = vars(ap.parse_args())
     output = args['output']
-    fourcc = cv2.VideoWriter_fourcc(*'mp4v') # Be sure to use lower case
+    fourcc = cv2.VideoWriter_fourcc(*'mp4v') 
     width, height, channels = frames[0].shape
     out = cv2.VideoWriter(output, fourcc, 20.0, (width, height))
 
