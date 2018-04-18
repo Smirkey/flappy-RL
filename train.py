@@ -262,8 +262,8 @@ def train(frame, logits, sess):
             scores = []
             ppt = 0
             if not os.path.exists('./logs/' + version):
-                os.makedirs('./model/' + version)
-            logFile = open("/model/{}/logs.txt".format(version), "w")
+                os.makedirs('./logs/' + version)
+            logFile = open("./logs/{}/logs.txt".format(version), "w")
 
             logFile.write("t: {}, state: {}, highest: {}".format(t, state, highestScore))
 
