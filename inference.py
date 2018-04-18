@@ -24,7 +24,7 @@ def makeVideo(frames, score):
     out = cv2.VideoWriter(output, fourcc, 20.0, (width, height))
 
     if not os.path.exists('./games/' + version):
-                os.makedirs('./games/' + version)
+        os.makedirs('./games/' + version)
     
     for frame in frames:
         out.write(frame)
