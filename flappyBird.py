@@ -2,10 +2,6 @@ from pygame.locals import *
 import pygame
 import random
 
-import time
-num_iters = 5
-
-
 class bird():
 
     def __init__(self, w, h):
